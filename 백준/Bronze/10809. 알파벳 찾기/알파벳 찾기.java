@@ -1,10 +1,10 @@
-import java.util.*;
+import java.io.*;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)throws IOException {
 		// TODO Auto-generated method stub
-		Scanner scanner=new Scanner(System.in);
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		
 		int[]arr=new int[26];
 		
@@ -14,7 +14,7 @@ public class Main {
 			arr[i]=-1; 
 		}
 		
-		String a=scanner.next();
+		String a=br.readLine();
 		
 		// A=65, a=97, 0=48
 		
