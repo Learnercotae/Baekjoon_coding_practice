@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-06T14:52:36.250Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="fztc9LdjE53GDlur94pf" version="24.4.14" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-06T15:24:18.796Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="PAj4Rad2xo5YOKj_PNNa" version="24.4.15" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1290" dy="565" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -73,6 +73,43 @@
         </mxCell>
         <mxCell id="Pc8JNSyQu8vU9I7N2dtG-12" value="+ ScheduleAdapter(ArrayList&lt;String&gt;)&#xa;+ onCreateViewHolder(ViewGroup, int): ViewHolder&#xa;+ onBindViewHolder(ViewHolder, int): void&#xa;+ getItemCount(): int&#xa;+ updateScheduleList(List&lt;String&gt;): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Pc8JNSyQu8vU9I7N2dtG-9">
           <mxGeometry y="63" width="319" height="81" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="nFv_ITKI29VZrLNovtUC" name="페이지-2">
+    <mxGraphModel dx="249" dy="697" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ukhMPyJDUR9VWzadyhUI-11" value="work" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="-70" width="274" height="209" as="geometry" />
+        </mxCell>
+        <mxCell id="ukhMPyJDUR9VWzadyhUI-12" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="ukhMPyJDUR9VWzadyhUI-11">
+          <mxGeometry y="30" width="274" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ukhMPyJDUR9VWzadyhUI-13" value="PK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="ukhMPyJDUR9VWzadyhUI-12">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ukhMPyJDUR9VWzadyhUI-14" value="COLUMN_ID(INTEGER)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="ukhMPyJDUR9VWzadyhUI-12">
+          <mxGeometry x="30" width="244" height="30" as="geometry">
+            <mxRectangle width="244" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ukhMPyJDUR9VWzadyhUI-15" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="ukhMPyJDUR9VWzadyhUI-11">
+          <mxGeometry y="60" width="274" height="149" as="geometry" />
+        </mxCell>
+        <mxCell id="ukhMPyJDUR9VWzadyhUI-16" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="ukhMPyJDUR9VWzadyhUI-15">
+          <mxGeometry width="30" height="149" as="geometry">
+            <mxRectangle width="30" height="149" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ukhMPyJDUR9VWzadyhUI-17" value="COLUMN_ID (&lt;span class=&quot;hljs-type&quot;&gt;INTEGER&lt;/span&gt;, PRIMARY &lt;span class=&quot;hljs-keyword&quot;&gt;KEY&lt;/span&gt;)&lt;div&gt;&lt;br&gt;COLUMN_WORKPLACE (&lt;span class=&quot;hljs-keyword&quot;&gt;TEXT&lt;/span&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;COLUMN_DATE (&lt;span class=&quot;hljs-keyword&quot;&gt;TEXT&lt;/span&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;COLUMN_START_TIME (&lt;span class=&quot;hljs-keyword&quot;&gt;TEXT&lt;/span&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;COLUMN_END_TIME (&lt;span class=&quot;hljs-keyword&quot;&gt;TEXT&lt;/span&gt;)&lt;/div&gt;" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="ukhMPyJDUR9VWzadyhUI-15">
+          <mxGeometry x="30" width="244" height="149" as="geometry">
+            <mxRectangle width="244" height="149" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
