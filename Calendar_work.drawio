@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-06T15:29:59.117Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="RHMtGeBAGr6YmWdNgdZ7" version="24.4.15" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-06-07T04:39:06.458Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="ylrFXID_JJFRSUXW1kU5" version="24.4.15" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1290" dy="565" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -110,6 +110,98 @@
           <mxGeometry x="30" width="326" height="128" as="geometry">
             <mxRectangle width="326" height="128" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="9uMlITJDkVv3NpdoOm4f" name="페이지-3">
+    <mxGraphModel dx="1050" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PaaRSkblzwSyQngT2fuB-1" value="work_registration" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="320" height="380" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PaaRSkblzwSyQngT2fuB-2" value="- nameEditview: EditText&#xa;- dateEditview: EditText&#xa;- spinnerstartTime: Spinner&#xa;- spinnerendTime: Spinner&#xa;- spinnerRestTime: Spinner&#xa;- spinnerPaydateType: Spinner&#xa;- spinnerPaydate: Spinner&#xa;- spinnerPayType: Spinner&#xa;- spinnerpay: Spinner&#xa;- spinnerInsurances: Spinner&#xa;- buttonSave: Button&#xa;- buttonCancel: Button&#xa;- dbHelper: WorkDatabaseHelper&#xa;- dateFormat: SimpleDateFormat&#xa;- calendar: Calendar" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PaaRSkblzwSyQngT2fuB-1">
+          <mxGeometry y="26" width="320" height="224" as="geometry" />
+        </mxCell>
+        <mxCell id="PaaRSkblzwSyQngT2fuB-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="PaaRSkblzwSyQngT2fuB-1">
+          <mxGeometry y="250" width="320" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PaaRSkblzwSyQngT2fuB-4" value="+ onCreate(savedInstanceState: Bundle): void&#xa;+ setupSpinner(spinner: Spinner, arrayResource: int): void&#xa;- getTimeOptions(): List&lt;String&gt;&#xa;- showDatePickerDialog(editText: EditText): void&#xa;- saveData(): void&#xa;+ SetupSpinnersTask&#xa;- doInBackground(Void... voids): Void&#xa;- onPostExecute(Void aVoid): Void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PaaRSkblzwSyQngT2fuB-1">
+          <mxGeometry y="258" width="320" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="6_XnF3GNtQt8COyhZDPm-1" value="WorkDatebaseHelper" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="688.5" y="80" width="258" height="231" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6_XnF3GNtQt8COyhZDPm-2" value="- DATABASE_NAME: String&#xa;- DATABASE_VERSION: int&#xa;- TABLE_WORK: String&#xa;- COLUMN_ID: String&#xa;- COLUMN_WORKPLACE: String&#xa;- COLUMN_DATE: String&#xa;- COLUMN_START_TIME: String&#xa;- COLUMN_END_TIME: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6_XnF3GNtQt8COyhZDPm-1">
+          <mxGeometry y="26" width="258" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="6_XnF3GNtQt8COyhZDPm-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="6_XnF3GNtQt8COyhZDPm-1">
+          <mxGeometry y="150" width="258" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="6_XnF3GNtQt8COyhZDPm-4" value="+ WorkDatabaseHelper(Context)&#xa;+ onCreate(SQLiteDatabase): void&#xa;+ onUpgrade(SQLiteDatabase, int, int): void&#xa;+ getWorkItemsByDate(String): Cursor" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6_XnF3GNtQt8COyhZDPm-1">
+          <mxGeometry y="158" width="258" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="MnPtUA4OAXv8IedJHxLP-1" value="work" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="240" height="340" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MnPtUA4OAXv8IedJHxLP-2" value="- REQUEST_CODE: int&#xa;- calendarView: CalendarView&#xa;- buttonAdd: ImageButton&#xa;- scheduleAdapter: ScheduleAdapter&#xa;- scheduleList: ArrayList&lt;String&gt;&#xa;- dateList: List&lt;String&gt;&#xa;- recyclerView: RecyclerView&#xa;- launcher: ActivityResultLauncher&lt;Intent&gt;&#xa;- workAdapter: WorkAdapter&#xa;- workItemList: List&lt;workitem&gt;&#xa;- diaryTextView: TextView&#xa;- dbHelper: WorkDatabaseHelper&#xa;- dateFormat: SimpleDateFormat&#xa;- selectedDate: String  " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MnPtUA4OAXv8IedJHxLP-1">
+          <mxGeometry y="26" width="240" height="214" as="geometry" />
+        </mxCell>
+        <mxCell id="MnPtUA4OAXv8IedJHxLP-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="MnPtUA4OAXv8IedJHxLP-1">
+          <mxGeometry y="240" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="MnPtUA4OAXv8IedJHxLP-4" value="+ onCreate(Bundle): void&#xa;+ loadWorkItemsForDate(String): void&#xa;+ goTohome(View): void&#xa;+ goToWork(View): void&#xa;+ goToAccount(View): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MnPtUA4OAXv8IedJHxLP-1">
+          <mxGeometry y="248" width="240" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="DKTAJWkqpir0gZXR151V-1" value="WorkAdapter" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="319" height="137" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DKTAJWkqpir0gZXR151V-2" value="- workItemList: List&lt;workitem&gt;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="DKTAJWkqpir0gZXR151V-1">
+          <mxGeometry y="26" width="319" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="DKTAJWkqpir0gZXR151V-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="DKTAJWkqpir0gZXR151V-1">
+          <mxGeometry y="55" width="319" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DKTAJWkqpir0gZXR151V-4" value="+ WorkAdapter(List&lt;workitem&gt;)&#xa;+ onCreateViewHolder(ViewGroup, int): WorkViewHolder&#xa;+ onBindViewHolder(WorkViewHolder, int): void&#xa;+ getItemCount(): int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="DKTAJWkqpir0gZXR151V-1">
+          <mxGeometry y="63" width="319" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="e8PRz9DoZiZy-klKOqJL-1" value="ScheduleAdapter" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="319" height="144" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8PRz9DoZiZy-klKOqJL-2" value="- scheduleList: ArrayList&lt;String&gt;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="e8PRz9DoZiZy-klKOqJL-1">
+          <mxGeometry y="26" width="319" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="e8PRz9DoZiZy-klKOqJL-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="e8PRz9DoZiZy-klKOqJL-1">
+          <mxGeometry y="55" width="319" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="e8PRz9DoZiZy-klKOqJL-4" value="+ ScheduleAdapter(ArrayList&lt;String&gt;)&#xa;+ onCreateViewHolder(ViewGroup, int): ViewHolder&#xa;+ onBindViewHolder(ViewHolder, int): void&#xa;+ getItemCount(): int&#xa;+ updateScheduleList(List&lt;String&gt;): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="e8PRz9DoZiZy-klKOqJL-1">
+          <mxGeometry y="63" width="319" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="D0NalIPX8jFS3OzV6xzu-1" value="workitem" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="440" width="242" height="280" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0NalIPX8jFS3OzV6xzu-2" value="- workplace: String&#xa;- startDate: String&#xa;- startTime: String&#xa;- endTime: String&#xa;- totalPay: double&#xa;- static RATE: int&#xa;- static TAG: String&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D0NalIPX8jFS3OzV6xzu-1">
+          <mxGeometry y="26" width="242" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="D0NalIPX8jFS3OzV6xzu-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="D0NalIPX8jFS3OzV6xzu-1">
+          <mxGeometry y="136" width="242" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="D0NalIPX8jFS3OzV6xzu-4" value="+ workitem(String, String, String, String)&#xa;- calculateTotalPay(): int&#xa;- convertTimeToMinutes(String): int&#xa;+ getWorkplace(): String&#xa;+ getDate(): String&#xa;+ getStartTime(): String&#xa;+ getEndTime(): String&#xa;+ getTotalPay(): double" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D0NalIPX8jFS3OzV6xzu-1">
+          <mxGeometry y="144" width="242" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
