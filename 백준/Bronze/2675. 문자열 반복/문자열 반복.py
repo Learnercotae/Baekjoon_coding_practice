@@ -1,22 +1,12 @@
-# 문자열 S가 공백으로 구분되어 주어짐.
-# 각 문자를 R번 반복하여 새 문자열 P 완성
-
-# - 앞 숫자를 int로 받고, 뒤에 문자들을 list로 받음.
-#a=int(input())
-#b=list(str(input()))
-#for i in range(len(b)):
-    #for i in range(a):
-        #print(b.str(i))
+# 앞에 숫자 입력받고, 공백으로 나누는 함수 사용해서 분리
+# 앞 숫자만큼 뒤 문자열 반복
 
 
-# 2를 입력받을 input을 만들고, 2의 길이만큼 for문
-# b,c를 input받아주고, c의 길이만큼 문자열 반복
-# end를 사용하여 붙여주고, print()를 사용하여 띄어쓰기
-
-a= int(input())
+a=int(input())
 
 for i in range(a):
-    b,c=input().split() # - 2 abc
+    # 띄어쓰기에 맞춰 값 저장
+    b,c=input().split()
     for i in range(len(c)):
         print(int(b)*c[i],end='')
     print()
