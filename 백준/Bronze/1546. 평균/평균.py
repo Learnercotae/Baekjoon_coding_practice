@@ -10,7 +10,11 @@ scores=list(map(int,input().split()))
 
 max_score=max(scores)
 
-new_scores=[(score/max_score)*100 for score in scores]
+# scores 리스트에 있는 각 정수를 하나씩 가져와 score 변수에 할당
+# 각 socre에 대해 계산 수행
+# 결과값을 new_scores리스트에 순서대로 추가
+
+new_scores=[(score/max_score)*100 for score in scores] # 컴프리헨션 문법 사용
 average=sum(new_scores)/n
 
 print(average)
