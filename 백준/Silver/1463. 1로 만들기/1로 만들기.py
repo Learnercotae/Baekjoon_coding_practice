@@ -1,23 +1,15 @@
-# 1. X가 3으로 나누어 떨어지면, 3으로 나눔
-# 2. X가 2로 나누어 떨어지면, 2로 나눔
-# 3. 1을 뺌
-
-# if) 10이면 1을 먼저 빼고 3으로 나눔 9 -> 3 -> 1
-
-n=int(input())
-
-dp=[0]*10000001
-
-#dp[i] : 숫자 i를 만드는데 필요한 최소 연산 횟수
-#보텀업
-
-for i in range(2,n+1):
-    dp[i]=dp[i-1]+1 # 1을 빼주는 경우는 모든 숫자에 대해서 가능
-
-    if i%2 ==0: # 2로 나누어 떨어지는 경우, 최소값 갱신
-        dp[i] = min(dp[i], dp[i//2] + 1) 
-    
-    if i % 3 == 0 :# 3으로 나누어 떨어지는 경우, 최소값 갱신
-        dp[i] = min(dp[i], dp[i//3] + 1)
-
-print(dp[n])
+x=int(input())
+dp={1:0}
+def rec(n):
+    if n in dp.keys():
+        return dp[n]
+    if (n%3==0) and (n%2==0):
+        dp[n]=min(rec(n//3)+1, rec(n//2)+1)
+    elif n%3==0:
+        dp[n]=min(rec(n//3)+1, rec(n-1)+1)
+    elif n%2==0:
+        dp[n]=min(rec(n//2)+1, rec(n-1)+1)
+    else:
+        dp[n]=rec(n-1)+1
+    return dp[n]
+print(rec(x))
