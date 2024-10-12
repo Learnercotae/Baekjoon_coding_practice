@@ -31,7 +31,7 @@ def bfs(graph, a, b):
 n = int(input())
 graph = []
 for i in range(n):
-    graph.append(list(map(int, input().strip())))
+    graph.append(list(map(int, input().strip()))) # sys.stdin.readline 사용 시, strip()함수 필수 (\n 함수가 포함되므로 제거 필요)
 
 # 모든 위치 확인
 cnt = []
