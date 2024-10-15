@@ -1,38 +1,38 @@
-class BinaryTree:
-    def __init__(self):
-        self.tree = {}
+import sys
+ 
+N = int(sys.stdin.readline().strip())
+tree = {}
+ 
+for n in range(N):
+    root, left, right = sys.stdin.readline().strip().split()
 
-    def add_node(self, root, left, right):
-        self.tree[root] = (left, right)
-
-    def preorder(self, root):
-        if root == '.':
-            return ""
-        left, right = self.tree[root]
-        return root + self.preorder(left) + self.preorder(right)
-
-    def inorder(self, root):
-        if root == '.':
-            return ""
-        left, right = self.tree[root]
-        return self.inorder(left) + root + self.inorder(right)
-
-    def postorder(self, root):
-        if root == '.':
-            return ""
-        left, right = self.tree[root]
-        return self.postorder(left) + self.postorder(right) + root
-
-
-n = int(input())  # 트리의 노드 개수
-bt = BinaryTree()
-
-# 트리 정보 입력
-for _ in range(n):
-    root, left, right = input().split()
-    bt.add_node(root, left, right)
-
-# 전위, 중위, 후위 순회 결과 출력
-print(bt.preorder('A'))  # 루트가 'A'라고 가정
-print(bt.inorder('A'))
-print(bt.postorder('A'))
+    #트리 딕셔너리에 노드 정보 저장 ex)tree['A']=['B','C']
+    tree[root] = [left, right]
+ 
+ #전위 함수
+def preorder(root):
+    if root != '.':
+        print(root, end='')  # root
+        preorder(tree[root][0])  # left
+        preorder(tree[root][1])  # right
+ 
+ #중위 함수
+def inorder(root):
+    if root != '.':
+        inorder(tree[root][0])  # left
+        print(root, end='')  # root
+        inorder(tree[root][1])  # right
+ 
+ #후위 함수
+def postorder(root):
+    if root != '.':
+        postorder(tree[root][0])  # left
+        postorder(tree[root][1])  # right
+        print(root, end='')  # root
+ 
+ #트리를 순회하고 결과 출력
+preorder('A') #전위 순회, 시작은 항상 'A'(루트)로 시작
+print()
+inorder('A')
+print()
+postorder('A')
