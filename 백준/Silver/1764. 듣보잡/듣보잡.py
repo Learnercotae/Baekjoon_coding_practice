@@ -1,16 +1,18 @@
-n,m=map(int, input().split())
+import sys
+input = sys.stdin.readline
 
-a=set()
-for i in range(n):
-    a.add(input())
+n, m = map(int, input().split())
 
-b=set()
-for i in range(m):
-    b.add(input())
+a = set()
+for _ in range(n):
+    a.add(input().strip())
 
-result=sorted(list(a&b))
+b = set()
+for _ in range(m):
+    b.add(input().strip())
+
+result = sorted(a & b)
 
 print(len(result))
-
-for i in result:
-    print(i)
+for name in result:
+    print(name)
