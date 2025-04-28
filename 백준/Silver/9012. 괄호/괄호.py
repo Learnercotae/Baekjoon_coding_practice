@@ -1,19 +1,22 @@
-T = int(input())
+T=int(input())
 
-for i in range(T):
-    stack = []
-    a=input()
-    for j in a:
-        if j == '(':
-            stack.append(j)
-        elif j == ')':
-            if stack:
+for _ in range(T):
+    ps=input()
+    stack=[]
+
+    for char in ps:
+        if char=='(':
+            stack.append(char)
+        elif char==')':
+            if stack: #스택이 비어있지 않다면
                 stack.pop()
-            else: # 스택에 괄호가 없을경우 NO
+            else:
+                #스택이 비었는데 닫는 괄호가 나오면
                 print("NO")
                 break
-    else: # break문으로 끊기지 않고 수행됬을경우 수행한다
-        if not stack: # break문으로 안끊기고 스택이 비어있다면 괄호가 다 맞는거다.
+    else:
+        #for문 정상적으로 끝났을 때
+        if not stack:
             print("YES")
-        else: # break안 걸렸더라도 스택에 괄호가 들어있다면 NO이다.
+        else:
             print("NO")
