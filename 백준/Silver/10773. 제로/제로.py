@@ -1,6 +1,5 @@
 K=int(input())
 tup=[]
-sum=0
 
 for i in range(K):
     a=int(input())
@@ -8,7 +7,5 @@ for i in range(K):
         tup.pop()
     else:
         tup.append(a)
-for i in tup:
-    sum+=i
 
-print(sum)
+print(sum(tup))
