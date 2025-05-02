@@ -8,6 +8,7 @@ T=int(input())
 for i in range(T):
     n,m=map(int,input().split())
     priorities = list(map(int, input().split()))
+    #enumerate = 열거하다/순서대로 세다/ 번호를 메기다
     queue = deque([(i, p) for i, p in enumerate(priorities)])  # (index, priority)
     count = 0
 
